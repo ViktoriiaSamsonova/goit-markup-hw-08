@@ -1,0 +1,64 @@
+.hero {
+  background-color: var(--accent-bg-color);  
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: var(--gradient),
+  url(../images/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: var(--gradient),
+  url(../images/hero-mob-2x.jpg);
+  }
+  @include tablet {
+     background-image: var(--gradient),
+  url(../images/hero-tab.jpg);
+  @include retina {
+    background-image: var(--gradient),
+  url(../images/hero-tab-2x.jpg);
+  }
+  }
+   @include desktop {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 600px;
+  background-image: var(--gradient),
+  url(../images/hero-img-2x.jpg);
+  @include retina {
+    background-image: var(--gradient),
+  url(../images/hero-img-2x.jpg);
+  }
+  }
+}
+
+.hero__container {
+text-align: center;
+justify-content: center;
+flex-grow: 1;
+padding: 0;
+max-width: 100%;
+}
+
+.hero__title {
+  max-width: 360px;
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+}
+}

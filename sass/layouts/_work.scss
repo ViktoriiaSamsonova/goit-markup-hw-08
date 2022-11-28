@@ -1,0 +1,42 @@
+
+.catalog__title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.catalog-menu {
+    display: flex;
+    gap: 30px;
+    & .title{
+  position: absolute;
+  min-height: 421px;
+  left: 215px;
+  top: 931px;
+}
+}
+
+.catalog {
+    padding-top: 0;
+    display: none;
+    @include desktop {
+        display: flex;
+    }
+}
+.catalog-menu__item {
+    position: relative;
+}
+
+ .catalog-menu__text {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    @extend %aline-list;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);;
+ }
