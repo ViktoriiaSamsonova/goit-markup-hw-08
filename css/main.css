@@ -128,7 +128,7 @@ img {
 
 .header {
   border-bottom: 1px solid var(--header-stroke-color);
-  height: 60px;
+  min-height: 60px;
 }
 
 .header-container {
@@ -711,16 +711,6 @@ img {
 @media screen and (min-width: 480px) {
   .menu__title {
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu__title {
-    text-align: start;
-  }
-}
-@media screen and (min-width: 1170px) {
-  .menu__title {
-    text-align: start;
   }
 }
 
